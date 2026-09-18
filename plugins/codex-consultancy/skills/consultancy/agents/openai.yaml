@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consultancy"
+  short_description: "Run tasks through a managed specialist team"
+  default_prompt: "Use $consultancy to assemble and manage a specialist team for this task."

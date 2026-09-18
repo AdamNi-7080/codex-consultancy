@@ -1,0 +1,21 @@
+{
+  "name": "codex-consultancy",
+  "version": "0.1.0",
+  "description": "Evidence-led discovery, sign-off, specialist delivery, and independent acceptance for Codex engagements.",
+  "author": {
+    "name": "Adam Ni",
+    "url": "https://github.com/AdamNi-7080"
+  },
+  "repository": "https://github.com/AdamNi-7080/codex-consultancy",
+  "keywords": ["consultancy", "planning", "research", "delivery", "quality"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Consultancy",
+    "shortDescription": "Evidence-led consultancy engagements in Codex.",
+    "longDescription": "Guides discovery, research-backed recommendations, user sign-off, specialist delivery, independent acceptance, and goal-aware long-running work.",
+    "developerName": "Adam Ni",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": "Use $consultancy to plan, staff, and deliver this engagement."
+  }
+}

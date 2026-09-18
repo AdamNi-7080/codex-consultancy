@@ -1,0 +1,20 @@
+{
+  "name": "codex-consultancy",
+  "interface": {
+    "displayName": "Codex Consultancy"
+  },
+  "plugins": [
+    {
+      "name": "codex-consultancy",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-consultancy"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
