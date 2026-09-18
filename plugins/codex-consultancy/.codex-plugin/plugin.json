@@ -1,21 +1,30 @@
 {
   "name": "codex-consultancy",
-  "version": "0.1.0",
-  "description": "Evidence-led discovery, sign-off, specialist delivery, and independent acceptance for Codex engagements.",
+  "version": "0.1.1",
+  "description": "Adaptive specialist delivery with evidence-based acceptance and proportionate coordination.",
   "author": {
     "name": "Adam Ni",
     "url": "https://github.com/AdamNi-7080"
   },
   "repository": "https://github.com/AdamNi-7080/codex-consultancy",
-  "keywords": ["consultancy", "planning", "research", "delivery", "quality"],
+  "keywords": [
+    "consultancy",
+    "planning",
+    "research",
+    "delivery",
+    "quality"
+  ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Codex Consultancy",
-    "shortDescription": "Evidence-led consultancy engagements in Codex.",
-    "longDescription": "Guides discovery, research-backed recommendations, user sign-off, specialist delivery, independent acceptance, and goal-aware long-running work.",
+    "displayName": "Consultancy Agent Workflow",
+    "shortDescription": "Coordinate expert agent teams efficiently.",
+    "longDescription": "Uses task-shaped specialists, proportionate audits, independent acceptance, and proven workflow reuse while preserving existing authorization.",
     "developerName": "Adam Ni",
     "category": "Productivity",
-    "capabilities": ["Interactive", "Write"],
-    "defaultPrompt": "Use $consultancy to plan, staff, and deliver this engagement."
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": "Use $consultancy-agent-workflow to staff and coordinate an expert team for this task."
   }
 }

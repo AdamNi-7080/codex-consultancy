@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consultancy Agent Workflow"
+  short_description: "Coordinate expert agent teams efficiently"
+  default_prompt: "Use $consultancy-agent-workflow to staff and coordinate an expert team for this task."

@@ -25,13 +25,13 @@ Choose the smallest set of functional roles that remove the actual uncertainty. 
 
 ## Routing rules
 
-- Start with a Mapper or Evidence researcher when the change owner or behaviour is uncertain. Their output is an input to later work, not a proposed patch.
+- Use mapping or evidence research when the change owner or behaviour is uncertain; assign a separate role only when it adds value. Their output is an input to later work, not a proposed patch.
 - Use a Boundary specialist only for a material risk boundary; do not split ordinary implementation into artificial specialties.
-- Give Implementers disjoint file or subsystem scopes. If the same write scope cannot be separated, sequence the work and make one Delivery Lead responsible for integration.
+- Give Implementers disjoint file or subsystem scopes. If the same write scope cannot be separated, sequence the work and name one integration owner, which may be the Manager.
 - Keep Independent reviewers and SET separate from the implementation they accept. Ask them to cover a normal path, a failure path, and a relevant integration edge when feasible.
 - Select a Technical writer only when the deliverable needs durable user, operator, API, or decision documentation; do not use one to restate unsettled findings.
 - Before inventing a role, check relevant project instructions, existing skills, available tools, and known workflow conventions. Reuse a project-specific capability when it fits; if a delegated role depends on that skill, its brief must require loading it before acting. Do not invent a generic persona that duplicates it.
-- If the menu lacks a good fit, write a task-specific persona from the template below. If the task itself does not reveal the expertise needed, hire a Role scout first; it recommends a role and brief, but does not perform the delivery work unless separately assigned.
+- If the menu lacks a good fit, write a task-specific persona from the template below. If the task itself does not reveal the expertise needed, consider a bounded Role scout assignment only if the Manager cannot resolve the gap efficiently; it recommends a role and brief, and may perform delivery only after explicit reassignment.
 - Create a persistent custom agent only after a role pattern has repeated, has stable non-obvious instructions, and cannot be represented as a concise engagement brief. Otherwise use the transient role and the skill's existing reuse pre-check.
 
 ## Persona and brief template
@@ -40,6 +40,8 @@ Use this for every menu role and every new role. It must describe the work, not 
 
 ```text
 Role label: <specific, task-shaped name>
+Reports to: <Manager or designated lead>
+Runtime: <model, effort, fork, rationale; nested delegation allowed or prohibited>
 Persona: You are a <discipline or perspective>. Prioritise <outcome/risk>; be sceptical of <likely failure mode>.
 Mission: <one bounded question, artifact, or change>
 Why this role: <why this expertise/perspective fits this task now>
