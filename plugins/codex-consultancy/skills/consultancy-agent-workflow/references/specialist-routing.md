@@ -1,6 +1,6 @@
 # Specialist routing
 
-Choose the smallest set of functional roles that remove the actual uncertainty. This is an idea menu, not an organisation chart, installed-agent catalogue, or required staffing list. The manager hires the role suitable for the task at hand. If no pattern fits, define a task-specific persona; if the needed expertise or framing is unclear, assign a bounded role-discovery brief before staffing delivery work.
+Map the complete team from outputs and risk boundaries before spawning, including a separate independent acceptance owner. This is an idea menu, not an organisation chart, installed-agent catalogue, or required staffing list. Match each role to its output, evidence standard, tools, job level, and risk boundary before choosing a title. Launch roles when their inputs are ready. If no pattern fits, define a task-specific persona; if the needed expertise or framing is unclear and materially affects staffing, assign a bounded role-discovery brief before staffing delivery work.
 
 | Need | Role pattern | Owns | Must return |
 |---|---|---|---|
@@ -28,10 +28,11 @@ Choose the smallest set of functional roles that remove the actual uncertainty. 
 - Use mapping or evidence research when the change owner or behaviour is uncertain; assign a separate role only when it adds value. Their output is an input to later work, not a proposed patch.
 - Use a Boundary specialist only for a material risk boundary; do not split ordinary implementation into artificial specialties.
 - Give Implementers disjoint file or subsystem scopes. If the same write scope cannot be separated, sequence the work and name one integration owner, which may be the Manager.
-- Keep Independent reviewers and SET separate from the implementation they accept. Ask them to cover a normal path, a failure path, and a relevant integration edge when feasible.
+- Give every engagement an Independent reviewer or SET who did not produce the work being accepted. Scale checks to the work; cover a normal path, a failure path, and a relevant integration edge when feasible. This role is at least Mid level.
 - Select a Technical writer only when the deliverable needs durable user, operator, API, or decision documentation; do not use one to restate unsettled findings.
 - Before inventing a role, check relevant project instructions, existing skills, available tools, and known workflow conventions. Reuse a project-specific capability when it fits; if a delegated role depends on that skill, its brief must require loading it before acting. Do not invent a generic persona that duplicates it.
-- If the menu lacks a good fit, write a task-specific persona from the template below. If the task itself does not reveal the expertise needed, consider a bounded Role scout assignment only if the Manager cannot resolve the gap efficiently; it recommends a role and brief, and may perform delivery only after explicit reassignment.
+- Where two candidates seem plausible, prefer the one that can own the smallest decision-changing output with the least handoff cost. Check required access and whether the candidate's prior involvement would compromise independent acceptance. If both roles need the same inputs and would return the same evidence, hire one and refine its brief.
+- If the menu lacks a good fit, write a task-specific persona from the template below. If the task itself does not reveal the expertise needed, consider a bounded Role scout assignment only if the Manager cannot resolve the gap efficiently; it recommends a role and brief. A separate fresh agent owns any later delivery assignment.
 - Create a persistent custom agent only after a role pattern has repeated, has stable non-obvious instructions, and cannot be represented as a concise engagement brief. Otherwise use the transient role and the skill's existing reuse pre-check.
 
 ## Persona and brief template
@@ -41,7 +42,7 @@ Use this for every menu role and every new role. It must describe the work, not 
 ```text
 Role label: <specific, task-shaped name>
 Reports to: <Manager or designated lead>
-Runtime: <model, effort, fork, rationale; nested delegation allowed or prohibited>
+Runtime: <job level, model, effort, fork, rationale; nested delegation allowed or prohibited>
 Persona: You are a <discipline or perspective>. Prioritise <outcome/risk>; be sceptical of <likely failure mode>.
 Mission: <one bounded question, artifact, or change>
 Why this role: <why this expertise/perspective fits this task now>
@@ -55,7 +56,7 @@ Return format: <the applicable result-contract fields, concise>
 Stop/escalate: <missing access, conflicting evidence, scope expansion, or repeated failed check that requires handoff>
 ```
 
-When inventing a persona, use the task's domain, decision, failure modes, and acceptance evidence—not decorative seniority or a generic "expert" label. The model/effort allocation remains a separate risk and complexity decision.
+When inventing a persona, use the task's domain, decision, failure modes, and acceptance evidence. Derive job level from the assignment's autonomy, ambiguity, and consequence, not decorative seniority or a generic "expert" label. Apply that level's model and effort floor from [model-allocation.md](model-allocation.md).
 
 ## Result contract
 

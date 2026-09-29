@@ -2,18 +2,27 @@
 
 ## Staffing and capacity
 
-Choose the smallest complete team. Each added role must remove material uncertainty, shorten a critical-path decision, or supply independent review. Do not create roles for status reporting alone or to fill capacity.
+Map the smallest complete team before work starts. Derive workstreams from required outputs, interfaces, and risk boundaries; assign one delivery owner to each, an integration owner when outputs must be combined, and a separate independent acceptance owner for every engagement. Stage launches by dependency, rather than deciding whether acceptance is needed after delivery. Do not create roles for status reporting, to fill capacity, or to split tightly coupled work merely for parallelism.
+
+Before each hire, make a short comparative decision:
+
+- **Need now:** Identify the mapped decision, artifact, or acceptance check, its consumer, and whether its inputs are ready. Keep later roles on the team map until their dependency is satisfied.
+- **Best role and level:** Choose the specialist perspective and job level with the necessary tool access, autonomy, judgment, and clear write boundary. A role label or claim of expertise is not evidence of fit; use task evidence or a bounded discovery assignment when fit is uncertain.
+- **Net value:** Count briefing, coordination, review, and integration work as well as the expected gain in speed or quality. Hire for independent judgment when correlated assumptions would otherwise weaken acceptance, even if it does not save time. Do not split a tightly coupled task just to run agents concurrently.
+- **Success and exit:** Define the evidence that makes the output usable, the dependency that governs timing, and when to stop or replace the agent. Reserve capacity for the acceptance owner before filling optional delivery slots.
+
+Keep the rationale to one or two sentences per material hire. Reassess when evidence changes; sunk briefing cost is not a reason to keep an ineffective role.
 
 | Work shape | Typical ownership |
 |---|---|
-| Small reversible change | Manager or delivery owner implements; focused independent reviewer where feasible |
+| Small reversible change | One implementer and a separate acceptance owner with focused checks |
 | Substantial implementation | Delivery Lead integrates; contributors own separable components; independent acceptance owner |
-| Research or investigation | Distinct evidence/hypothesis owners where useful; one synthesis owner and independent evidence review |
-| High-risk cross-system work | Delivery Lead, specialists for actual risk boundaries, and independent acceptance |
+| Research or investigation | Evidence owners for distinct questions where useful; one synthesis specialist and independent evidence review |
+| High-risk cross-system work | Principal judgment for consequential decisions, a Delivery Lead and boundary specialists where needed, plus independent acceptance |
 
-These are examples, not fixed teams. The Manager can own integration when a separate lead adds no value. Name acceptance ownership before implementation, but launch acceptance work only when there is useful evidence or an artifact to inspect. A Manager who implemented the change cannot also claim independent acceptance of it.
+These are examples, not a fixed roster. A single delivery agent can own implementation and integration when there is only one output. Name a distinct acceptance owner before delivery; launch acceptance when there is useful evidence or an artifact to inspect. The Manager's final sign-off does not replace that independent check.
 
-Inspect live capacity, whether the Manager counts toward it, and whether completed or idle agents retain slots. Do not assume waves release capacity. Reserve capacity for acceptance; reuse compatible agents when possible, preserving their actual model/effort and avoiding review of their own implementation. If retained slots prevent independent acceptance, disclose the limitation and use the strongest feasible direct checks. Do not invent a minimum delivery headcount or silently drop critical review. Configuration changes may require a new task or app reload; do not change global capacity without authorization.
+Inspect live capacity, whether the Manager counts toward it, and whether completed or idle agents retain slots. Do not assume waves release capacity. Reserve capacity for a fresh acceptance agent. If capacity blocks a required hire, queue the assignment and report the constraint; do not silently substitute the Manager or omit acceptance. Configuration changes may require a new task or app reload; do not change global capacity without authorization.
 
 ## Briefs and coordination
 
@@ -26,22 +35,22 @@ Before a parallel wave, identify its critical path, independent work, disjoint w
 Keep a compact roster:
 
 ```text
-Agent ID | Current role | Reports to | Model/effort/fork actually requested | Observed settings if exposed | Owned artifacts | Status
+Agent ID | Assignment and job level | Reports to | Model/effort/fork actually requested | Observed settings if exposed | Owned artifacts | Status
 ```
 
-On reassignment, identify the output moving, tell the prior owner to stop, hand off, or review, and issue a fresh brief with current decisions and adopted audit guidance. A follow-up does not change an agent's runtime configuration.
+Give each distinct assignment to a fresh agent. A follow-up may finish or correct only that agent's original assignment; it does not change runtime configuration. For a new task or a changed job level, spawn a new agent with a fresh brief and a concise handoff of accepted evidence and current decisions. Do not pass entire transcripts or repurpose an idle or completed agent.
 
 ## Evidence, integration, and recovery
 
-Accept each result against its brief before reuse. Confirm scope, artifact, evidence, assumptions, unresolved questions, and respected boundaries. Resolve conflicting findings against evidence and acceptance criteria rather than averaging conclusions. Preserve verified partial outputs and assign the smallest missing check or repair; do not restart good work unnecessarily.
+Accept each result against its brief before downstream use. Confirm scope, artifact, evidence, assumptions, unresolved questions, and respected boundaries. Resolve conflicting findings against evidence and acceptance criteria rather than averaging conclusions. Preserve verified partial outputs and assign the smallest missing check or repair; do not restart good work unnecessarily.
 
 After two unsuccessful attempts using substantially the same approach, change hypothesis, narrow scope, or escalate with the failed approach and evidence. Interrupt obsolete, duplicate, or out-of-scope work. Recover autonomously when possible; ask the user only when an actual decision or authorization is missing.
 
 Contributors run focused checks. The integration owner validates combined behavior; the independent acceptance owner inspects the artifact and evidence and exercises relevant normal, failure, and integration paths. Coordinate suite ownership to avoid redundant full runs: one existing full run may supply shared evidence, with independent targeted checks rather than another identical full run. Rerun affected checks after meaningful changes. Separate-agent review alone does not prove independent evidence, and completion messages are not proof of correctness.
 
-## Audits and reuse
+## Audits and skill reuse
 
-Run staffing and final handoff controls using [usage-audit.md](usage-audit.md). Adjacent checks can share a snapshot when no meaningful execution intervened. Add an intermediate audit only for material changes, repeated failures, an expensive wave, blocking verification defects, usage pressure, or a user-requested review. Delegate an Auditor only when independent assessment adds value; a focused reviewer may also audit if the two scopes remain clear. Reuse appropriately configured control agents when useful.
+Run staffing and final handoff controls using [usage-audit.md](usage-audit.md). Adjacent checks can share a snapshot when no meaningful execution intervened. Add an intermediate audit only for material changes, repeated failures, an expensive wave, blocking verification defects, usage pressure, or a user-requested review. Delegate a fresh Auditor only when independent assessment adds value; a focused acceptance reviewer may also audit if both checks belong to its original assignment.
 
 Before spawning a Skill Maker, the Manager checks:
 
@@ -59,10 +68,10 @@ Use `.codex/consultancy/operating-log.md` in writable projects; for intentionall
 ```text
 Current outcome and acceptance criteria:
 Decisions, assumptions, and unresolved choices:
-Roster, ownership, dependencies, and checkpoints:
+Full team map, job levels, ownership, dependencies, and launch checkpoints:
 Adopted efficiency guidance and reasons:
 Workflow candidates: evidence; observe | draft | validated | installed
 Durable lessons and exceptions:
 ```
 
-Update existing entries; do not accumulate stale status. Persist only compact aggregate telemetry needed for comparisons, never credentials, account identifiers, private chain-of-thought, full transcripts, or raw usage payloads. Every resumed specialist receives the current relevant state. At closeout report outcome, verification, caveats, material ownership/audit changes, telemetry limitations, and any skill produced; omit empty administrative sections.
+Update existing entries; do not accumulate stale status. Persist only compact aggregate telemetry needed for comparisons, never credentials, account identifiers, private chain-of-thought, full transcripts, or raw usage payloads. Every newly hired specialist receives the current relevant state. At closeout report outcome, verification, caveats, material ownership/audit changes, telemetry limitations, and any skill produced; omit empty administrative sections.

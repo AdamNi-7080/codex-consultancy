@@ -20,4 +20,4 @@ Continue through authorized milestones, recovery, and verification. Return to th
 
 Create a persistent Goal only on an explicit user request for one. Do not infer that request from ordinary instructions to finish or continue. If requested, define the end state, constraints, verifiable completion criteria, and stopping conditions; follow the live Goal tool's rules for status changes and budgets. A Goal does not expand authority.
 
-Integrate the output, obtain the strongest feasible acceptance evidence, and disclose residual uncertainty. Follow the operating model's handoff and reuse checks.
+Have the integration and independent acceptance owners verify their outputs, then synthesize the evidence and disclose residual uncertainty. Follow the operating model's handoff and skill reuse checks.

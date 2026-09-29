@@ -4,16 +4,16 @@ An installable Codex skill for adaptive, manager-led specialist delivery. The re
 
 ## How it works
 
-- Selects the smallest complete team, with explicit ownership and bounded assignments.
+- Maps the smallest complete team before work starts, with explicit delivery, integration, and independent acceptance ownership.
 - Uses discovery for unresolved material choices and continues already-authorized work without repeated sign-off.
-- Applies model and effort choices at spawn time, based on difficulty and consequence.
+- Assigns Junior, Mid, Senior, or Principal job levels and applies their GPT-6 model and effort baselines at spawn time.
 - Checks staffing and final handoff, adding independent or intermediate audits when useful.
-- Verifies artifacts and evidence independently where feasible, with proportionate tests and explicit uncertainty.
+- Requires a separate acceptance owner for every engagement, with proportionate checks and explicit uncertainty.
 - Preserves verified partial results and changes approach after repeated failure.
 - Creates reusable skills only when evidence and a concrete future use justify them.
 - Uses real telemetry when available and clearly labeled proxies otherwise.
 
-The Manager can work directly. Constrained or unavailable delegation is disclosed, with serial execution where feasible. Persistent Goals require explicit requests. The workflow does not expand authorization for publication, external messages, spending, or destructive actions.
+The Manager coordinates and signs off; specialists deliver the work. Each distinct assignment uses a fresh subagent, while follow-ups may finish or correct the original assignment. Required work waits when capacity prevents a hire. Persistent Goals require explicit requests. The workflow does not expand authorization for publication, external messages, spending, or destructive actions.
 
 ## Install
 
